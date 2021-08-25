@@ -28,13 +28,11 @@ void loop() {
     digitalWrite(red,HIGH);
     digitalWrite(yell,LOW);
     digitalWrite(blue,LOW);
-    
-    if(distance <= 3){
-        digitalWrite(red,LOW);
-        delay(50);
-        digitalWrite(red,HIGH);
-        
-    }
+  } 
+  else if(distance <= 3){ // Pupose of this is to make it flash red instead
+      digitalWrite(red,LOW);
+      delay(50);
+      digitalWrite(red,HIGH);
   }
   else if(distance > 4 && distance < 12 ){
       digitalWrite(red,LOW);
